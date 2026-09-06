@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Authorization in RPFA - Next Generation</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+        <meta name="description" content="Authorization in RPFA - Next Generation">
+        <meta name="keywords" content="Authorization, RPFA, RPFA - Next Generation, Authorization RPFA">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <img src="logo.png" class="logo">
+        <form class="forms">
+            <label class="labels" for="email">Email</label>
+            <input class="inputs" type="email" id="email" autocomplete="off">
+            <label class="labels" for="password">Password</label>
+            <input class="inputs" type="text" id="password" autocomplete="off">
+            <div class="buttons">
+                <button class="btn" type="button" id="signInBtn">SIGN IN</button>
+                <button class="btn" type="button" id="signUpBtn">SIGN UP</button>
+            </div>
+        </form>
+        <p class="msg" id="authMessage"></p>
+
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+        <script src="config.js"></script>
+        <script src="cookie.js"></script>
+        <script src="auth.js"></script>
+    </body>
+</html>

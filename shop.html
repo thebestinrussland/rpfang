@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Shop RPFA - Next Generation</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+        <meta name="description" content="Shop RPFA - Next Generation">
+        <meta name="keywords" content="Shop, RPFA, RPFA - Next Generation, Shop RPFA">
+        <link href="styles.css" rel="stylesheet">
+        <link href="shop.css" rel="stylesheet">
+    </head>
+    <body>
+        <img src="logo.png" class="logo">
+        <a class="shop-title">Магазин лицензий</a>
+
+        <div class="plans">
+            <div class="plan-card" data-license="free">
+                <div class="plan-name">Free</div>
+                <div class="plan-price">0 ₽</div>
+                <ul class="plan-features">
+                    <li>Базовый доступ</li>
+                    <li>Стандартные функции</li>
+                </ul>
+                <div class="plan-status"></div>
+            </div>
+            <div class="plan-card" data-license="pro">
+                <div class="plan-name">Pro</div>
+                <div class="plan-price">по промокоду</div>
+                <ul class="plan-features">
+                    <li>Расширенные функции</li>
+                    <li>Приоритетная поддержка</li>
+                </ul>
+                <div class="plan-status"></div>
+            </div>
+            <div class="plan-card" data-license="max">
+                <div class="plan-name">Max</div>
+                <div class="plan-price">по промокоду</div>
+                <ul class="plan-features">
+                    <li>Все функции без ограничений</li>
+                    <li>Максимальный приоритет</li>
+                </ul>
+                <div class="plan-status"></div>
+            </div>
+        </div>
+
+        <div class="promo-section">
+            <label class="labels" for="promoInput">Промокод</label>
+            <div class="promo-row">
+                <input class="inputs" type="text" id="promoInput" autocomplete="off">
+                <button class="btn" type="button" id="applyPromoBtn">ПРИМЕНИТЬ</button>
+            </div>
+            <div class="promo-message" id="promoMessage"></div>
+        </div>
+
+        <a class="title" href="account.html">&larr; Назад в аккаунт</a>
+
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+        <script src="config.js"></script>
+        <script src="cookie.js"></script>
+        <script src="shop.js"></script>
+    </body>
+</html>

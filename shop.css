@@ -1,0 +1,84 @@
+.shop-title {
+    display: block;
+    text-align: center;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+.plan-card {
+    width: 220px;
+    border: 2px solid #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ebe5d8;
+    box-sizing: border-box;
+}
+
+.plan-card.current {
+    background-color: #d4cec0;
+}
+
+.plan-name {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.plan-price {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.plan-status {
+    font-size: 13px;
+    font-style: italic;
+    min-height: 18px;
+}
+
+.promo-section {
+    text-align: center;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto 30px auto;
+}
+
+.promo-row {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.promo-row .inputs {
+    width: 260px;
+    margin: 0;
+}
+
+.promo-row .btn {
+    width: 130px;
+}
+
+.promo-message {
+    margin-top: 10px;
+    font-size: 14px;
+    min-height: 20px;
+}
